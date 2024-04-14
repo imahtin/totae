@@ -1,0 +1,28 @@
+cker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+
+
+ sudo apt-get i
+
+docker run hello-world
+
+sudo apt update
+
+sudo apt upgrade
+
+wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
+
+sudo tar -C /usr/local/ -xzf go1.13.5.linux-amd64.tar.gz
+
+cd /usr/local/
+
+echo $PATH
+
+sudo nano $Hile
